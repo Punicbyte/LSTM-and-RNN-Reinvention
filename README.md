@@ -38,14 +38,14 @@ This creates a simple memory test: can the model remember important information 
 The dataset is stored in a CSV file:
 
 ```text
-synthetic_memory_100.csv
+synthetic_memory_500_very_long.csv
 ```
 
 It contains:
 
-- 100 total examples
-- 80 training examples
-- 20 validation examples
+- 500 total examples
+- 400 training examples
+- 100 validation examples
 - 30 tokens per sequence
 - labels: RED or BLUE
 
@@ -137,3 +137,5 @@ Vanilla RNN = hidden-state memory
 LSTM = gated long-term memory
 Transformer = later replaces step-by-step memory with attention
 ```
+
+**Unfortunately RNN and LSTM actually showed very similar results
